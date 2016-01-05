@@ -17,7 +17,8 @@ public class SbuxMainClass {
 		
 		ResponseEntity<String> response =  restClient.getForEntity("http://jsonplaceholder.typicode.com/posts/{id}", String.class, urlVariables);
 		
-		System.out.println("Response Body>>>"+response.getBody());
+		System.out.println("Response Body>>  "+response.getBody());
+		System.out.println("<< End of body >>");
 		
 	}
 
